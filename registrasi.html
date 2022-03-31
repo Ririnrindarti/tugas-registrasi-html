@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+
+<!-- Nama: Ririn rindarti 
+    NIM : 1120031033 
+tugas 1 pemrograman web lanjut 
+halaman registrasi suatu website -->
+<html> 
+    <head> 
+        <title> Registrasi Website</title>
+        <style> 
+        table, th, td {
+  border:1px solid black;
+  text-align: center;
+}
+            .nilai-ipk {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body> 
+        <legend> Login </legend>
+        <form> 
+            Nama Depan:  
+            <input type="textfield" name="Nama Depan"><br> <br> 
+            Nama Belakang:
+            <input type="textfield" name="Nama Belakang"><br> <br> 
+            Alamat : 
+            <textarea type="textarea" name="Alamat"> </textarea><br> <br> 
+            Tempat Lahir:
+            <input type="text" name=tempat lahir><br><br> 
+            Tempat tanggal lahir:
+            <input type="date" name="tempat tanggal lahir"> <br> 
+            jenis Kelamin : <br> 
+            <input type="radio" name="jenis kelamin" volue="pria"> Pria
+            <br> 
+            <input type="radio" name="jenis kelamin" volue="wanita"> Wanita
+            <br> 
+            Status:
+            <br>
+            <input type="radio" name="status" volue="Belum Menikah"> Belum menikah 
+            <br> 
+            <input type="radio" name="status" volue="Sudah Menikah"> Sudah Menikah
+            <br> 
+            <input type="radio" name="status" volue="Pernah Menikah"> Pernah Menikah      
+            <br> 
+            E mail:
+            <input type="email" name="E mail"> 
+            <br> <br> 
+            Nomor Telepon: 
+            <input type="number" name="Nomor Telepon">
+            <br> <br>
+            
+        </form>
+        <form name="input" action="proses.php" method="get"> 
+
+        username: 
+        <input type="text" name="username"><br>
+        password:
+        <input type="password" name="password"> 
+        <br> <br> 
+        Upload Gambar: 
+        <input type="file" name="gambar"><br> 
+        </form><hr> 
+        <table style="width:50%">
+         <tr>
+             <th style="background-color: grey"> SEMESTER </th>
+             <th style="background-color: grey"> IPS </th>
+         </tr>
+         <tr> 
+             <td> SEMESTER 1</td>
+             <td style="  text-align: right;">
+             3,4</td>
+         </tr>
+         <tr> 
+             <td> SEMESTER 2</td>
+             <td  style="text-align: right;">
+             3,5</td>
+         </tr>
+         <tr> 
+             <td> SEMESTER 3</td>
+             <td style="  text-align: right;">
+                3,6</td>
+         </tr>
+         <tr> 
+             <td> SEMESTER 4</td>
+             <td style="  text-align: right;"> 3,9</td>
+         </tr>
+         <tr> 
+             <td class="nilai-ipk"> NILAI IPK </td>
+             <td style="  text-align: right;"> 3,7</td>
+         </tr>
+        </table>
+
+    </body>
+</html>
