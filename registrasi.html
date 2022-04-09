@@ -3,7 +3,8 @@
 <!-- Nama: Ririn rindarti 
     NIM : 1120031033 
 tugas 1 pemrograman web lanjut 
-halaman registrasi suatu website -->
+halaman registrasi suatu website 
+penambahan css pada registrasi-->
 <html> 
     <head> 
         <title> Registrasi Website</title>
@@ -16,27 +17,51 @@ halaman registrasi suatu website -->
                 font-weight: bold;
                 font-size: 16px;
             }
+            body { background-color: turquoise;
+                text-align:initial;
+                padding:90px;
+                
+            
+            }
+            .div {   border: 2px solid white;
+                    border-radius: 9px;
+                    padding: 10px;
+                    background-color:lightblue;
+}
         </style>
     </head>
     <body> 
-        <legend> Login </legend>
+        <fieldset>
+        <legend style="font-size: 50px;color:blue; text-align: center"> Login </legend>
         <form> 
-            Nama Depan:  
-            <input type="textfield" name="Nama Depan"><br> <br> 
-            Nama Belakang:
-            <input type="textfield" name="Nama Belakang"><br> <br> 
-            Alamat : 
-            <textarea type="textarea" name="Alamat"> </textarea><br> <br> 
-            Tempat Lahir:
-            <input type="text" name=tempat lahir><br><br> 
-            Tempat tanggal lahir:
+            <div class="div">
+                <label>Nama Depan: </label> 
+                <input type="textfield" name="Nama Depan">
+            </div> <br> 
+            <div class="div">
+                <label>Nama Belakang: </label>
+                <input type="textfield" name="Nama Belakang">
+            </div> <br> 
+            <div class="div">
+                <label for="">Alamat :</label> 
+                <textarea type="textarea" name="Alamat"> </textarea>
+            </div> <br> 
+            <div class="div">
+            <label>Tempat Lahir:</label>
+            <input type="text" name=tempat lahir>
+            </div> <br> 
+            <div class="div">
+            <label> Tempat tanggal lahir:</label>
             <input type="date" name="tempat tanggal lahir"> <br> 
-            jenis Kelamin : <br> 
+            </div> <br> 
+            <div class="div">
+            <label> Jenis kelamin </label>
             <input type="radio" name="jenis kelamin" volue="pria"> Pria
             <br> 
             <input type="radio" name="jenis kelamin" volue="wanita"> Wanita
-            <br> 
-            Status:
+            </div> <br> 
+            <div class="div">
+            <label> Status </label>
             <br>
             <input type="radio" name="status" volue="Belum Menikah"> Belum menikah 
             <br> 
@@ -44,24 +69,34 @@ halaman registrasi suatu website -->
             <br> 
             <input type="radio" name="status" volue="Pernah Menikah"> Pernah Menikah      
             <br> 
-            E mail:
-            <input type="email" name="E mail"> 
-            <br> <br> 
-            Nomor Telepon: 
-            <input type="number" name="Nomor Telepon">
-            <br> <br>
-            
+            </div> <br> 
+            </fieldset>
+            <fieldset> 
+                <legend style="color:blue;font-size:50px;text-align: center;"> penyimpanan kredensial</legend>
+            <div class="div"> 
+            <label> E mail </label>
+            <input type="email" name="E mail" placeholder="email@address.com"> 
+            </div> <br> 
+            <div class="div">
+            <label> Nomor Telepon </label> 
+            <input type="number" name="Nomor Telepon"placeholder="123-456-789">
+            </div> <br> 
+        
         </form>
         <form name="input" action="proses.php" method="get"> 
-
-        username: 
-        <input type="text" name="username"><br>
-        password:
-        <input type="password" name="password"> 
-        <br> <br> 
-        Upload Gambar: 
-        <input type="file" name="gambar"><br> 
-        </form><hr> 
+        <div class="div"> 
+        <label> username </label>
+        <input type="text" name="username"placeholder="username">
+        </div><br> 
+        <div class="div"> 
+        <label> password </label>
+        <input type="password" name="password"placeholder="password"> 
+        </div><br> 
+        <div class="div"> 
+        <label> upload gambar </label> 
+        <input type="file" name="gambar">
+    </div> 
+        </form><hr></fieldset>
         <table style="width:50%">
          <tr>
              <th style="background-color: grey"> SEMESTER </th>
